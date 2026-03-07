@@ -1,0 +1,62 @@
+@use "importer" as i;
+
+body {
+    background-color: i.$body-background-color;
+    border: 4px solid #6b0000;
+}
+
+.appBar {
+    height: 140px;
+    background-color: #e9e9ff;
+    margin: 0px 90px;
+}
+
+.topAppBar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #E3E3E8;
+
+    &__textLogo {
+        text-transform: uppercase;
+        font-style: italic;
+        color: i.$main-color;
+        margin: 0 5px;
+        letter-spacing: 2px;
+    }
+
+    &__imgLogo {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__inputSearch {
+        width: 430px;
+        height: 44px;
+        margin: 0 10px;
+        padding: 0 15px;
+        transition: all 500ms ease;
+        border: 1px solid #DEDEE2;
+        border-radius: 6px;
+
+        &::placeholder {
+            color: #505255;
+        }
+
+        &:focus {
+            border: 1px solid #848484;
+            outline: none;
+        }
+
+
+    }
+
+    &__imgSearch {
+        margin-left: -40px;
+    }
+}
+
+
+
+
+
