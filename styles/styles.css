@@ -1,7 +1,19 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   font-family: "Outfit", sans-serif;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.line {
+  border-bottom: 1px solid #E3E3E8;
+}
+
+.spaceBetweenLinks {
+  margin: 5px;
 }
 
 body {
@@ -11,45 +23,86 @@ body {
 
 .appBar {
   height: 140px;
-  background-color: #e9e9ff;
-  margin: 0px 90px;
+  background-color: white;
 }
 
 .topAppBar {
   display: flex;
   align-items: center;
   height: 70px;
-  border-bottom: 1px solid #E3E3E8;
 }
-.topAppBar__textLogo {
+.topAppBar .leftContainer {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.topAppBar .leftContainer__textLogo {
   text-transform: uppercase;
   font-style: italic;
   color: #5946d7;
   margin: 0 5px;
   letter-spacing: 2px;
 }
-.topAppBar__imgLogo {
+.topAppBar .leftContainer__imgLogo {
   width: 40px;
   height: 40px;
 }
-.topAppBar__inputSearch {
-  width: 430px;
-  height: 44px;
+.topAppBar .leftContainer__inputSearch {
+  display: flex;
+  align-items: center;
+  width: 440px;
   margin: 0 10px;
-  padding: 0 15px;
   transition: all 500ms ease;
   border: 1px solid #DEDEE2;
   border-radius: 6px;
+  background-color: #F4F5F6;
 }
-.topAppBar__inputSearch::placeholder {
+.topAppBar .leftContainer__inputSearch .inputSearch__container {
+  width: 100%;
+}
+.topAppBar .leftContainer__inputSearch .inputSearch__container input {
+  width: 95%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 12px;
+  background-color: #F4F5F6;
+}
+.topAppBar .leftContainer__inputSearch .inputSearch__container input::placeholder {
   color: #505255;
 }
-.topAppBar__inputSearch:focus {
-  border: 1px solid #848484;
-  outline: none;
+.topAppBar .leftContainer__inputSearch .inputSearch__imgContainer {
+  float: right;
+  margin: 5px;
+  cursor: pointer;
 }
-.topAppBar__imgSearch {
-  margin-left: -40px;
+.topAppBar .leftContainer__inputSearch .inputSearch__imgContainer img {
+  width: 24px;
+  height: 24px;
+}
+.topAppBar .rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 15px;
+}
+.topAppBar .rightContainer img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+.topAppBar .rightContainer__personalInfo {
+  font-size: 16px;
+  line-height: 20px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.topAppBar .rightContainer a {
+  text-decoration: none;
+  color: #1B1D1F;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,18 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Outfit", sans-serif;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.line {
+    border-bottom: 1px solid #E3E3E8
+}
+
+.spaceBetweenLinks {
+    margin: 5px;
 }
 
 

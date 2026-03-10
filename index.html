@@ -15,13 +15,42 @@
 
 	<body>
 		<header class="appBar">
-			<section class="topAppBar">
-				<img class="topAppBar__imgLogo" src="img/logo.png" alt="">
-				<h1 class="topAppBar__textLogo">oner.ru</h1>
-				<input class="topAppBar__inputSearch" type="text"
-					   placeholder="Введите номер запчасти или VIN">
-				<img class="topAppBar__imgSearch" src="img/search.svg" alt="">
+			<section class="topAppBar container">
+				<div class="leftContainer">
+					<img class="leftContainer__imgLogo" src="img/logo.png" alt="">
+					<h1 class="leftContainer__textLogo">oner.ru</h1>
+					<div class="leftContainer__inputSearch">
+						<div class="inputSearch__container">
+							<input type="text"
+								   placeholder="Введите номер запчасти или VIN">
+						</div>
+
+						<div class="inputSearch__imgContainer">
+							<img src="img/search.svg" alt="">
+						</div>
+
+					</div>
+
+				</div>
+				<div class="rightContainer">
+					<span class="rightContainer__personalInfo">
+						<img src="img/location.svg" alt="">
+						<a href="#">Санкт-Петербург</a>
+					</span>
+					<span class="rightContainer__personalInfo">
+						<img src="img/phone.svg" alt="">
+						<a href="tel:73472294645"><b>+7 (347) 229-46-45</b></a>
+					</span>
+					<span class="rightContainer__personalInfo">
+						<img src="img/user.svg" alt="">
+						<a href="#">Вход</a>
+						<span class="spaceBetweenLinks">/</span>
+						<a href="#">Регистрация</a>
+					</span>
+				</div>
+
 			</section>
+			<div class="line"></div>
 			<section class="bottomAppBar">
 
 			</section>
