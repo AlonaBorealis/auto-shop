@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   font-family: "Outfit", sans-serif;
 }
 
@@ -14,6 +15,13 @@
 
 .spaceBetweenLinks {
   margin: 5px;
+}
+
+.btn {
+  background-color: #6a59cb;
+  border-radius: 8px;
+  height: 44px;
+  cursor: pointer;
 }
 
 body {
@@ -103,6 +111,65 @@ body {
 .topAppBar .rightContainer a {
   text-decoration: none;
   color: #1B1D1F;
+}
+
+.bottomAppBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.bottomAppBar__allCategoriesBtn {
+  font-weight: 600;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 168px;
+  border: none;
+  padding: 10px;
+}
+.bottomAppBar__allCategoriesBtn img {
+  margin: 0 5px;
+}
+.bottomAppBar__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bottomAppBar__list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+.bottomAppBar__list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #F4F5F7;
+  border-radius: 8px;
+  width: 100%;
+  height: 44px;
+  margin: 0 5px;
+}
+.bottomAppBar__list li:hover {
+  cursor: pointer;
+}
+.bottomAppBar__basketBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F5F7;
+  float: right;
+  border: none;
+  width: 167px;
 }
 
 /*# sourceMappingURL=styles.css.map */
