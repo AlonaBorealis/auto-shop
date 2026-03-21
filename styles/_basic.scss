@@ -25,6 +25,7 @@
     cursor: pointer;
 }
 
-.active {
-    opacity: 0;
+.categories.active {
+    display: none;
 }
+

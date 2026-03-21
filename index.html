@@ -14,10 +14,10 @@
 	</head>
 
 	<body>
-		<header class="appBar">
+		<header id="appBar" class="appBar">
 			<section class="topAppBar container">
 				<div class="leftContainer">
-					<img class="leftContainer__imgLogo" src="img/logo.png" alt="">
+					<img class="leftContainer__imgLogo" src="img/header/logo.png" alt="">
 					<h1 class="leftContainer__textLogo">oner.ru</h1>
 					<div class="leftContainer__inputSearch">
 						<div class="inputSearch__container">
@@ -26,7 +26,7 @@
 						</div>
 
 						<div class="inputSearch__imgContainer">
-							<img src="img/search.svg" alt="">
+							<img src="img/header/search.svg" alt="">
 						</div>
 
 					</div>
@@ -34,15 +34,15 @@
 				</div>
 				<div class="rightContainer">
 					<span class="rightContainer__personalInfo">
-						<img src="img/location.svg" alt="">
+						<img src="img/header/location.svg" alt="">
 						<a href="#">Санкт-Петербург</a>
 					</span>
 					<span class="rightContainer__personalInfo">
-						<img src="img/phone.svg" alt="">
+						<img src="img/header/phone.svg" alt="">
 						<a href="tel:73472294645"><b>+7 (347) 229-46-45</b></a>
 					</span>
 					<span class="rightContainer__personalInfo">
-						<img src="img/user.svg" alt="">
+						<img src="img/header/user.svg" alt="">
 						<a href="#">Вход</a>
 						<span class="spaceBetweenLinks">/</span>
 						<a href="#">Регистрация</a>
@@ -54,7 +54,7 @@
 			<section class="bottomAppBar container">
 				<div class="bottomAppBar__navigation">
 					<button id="categoriesBtn" class="bottomAppBar__allCategoriesBtn btn">
-						<img src="img/grid.svg" alt="">
+						<img src="img/header/grid.svg" alt="">
 						<span>Все категории</span>
 
 					</button>
@@ -67,13 +67,13 @@
 						<li>Аккумуляторы</li>
 					</ul>
 					<button class="bottomAppBar__basketBtn btn">
-						<img src="img/basket.svg" class="img" alt="">Корзина
+						<img src="img/header/basket.svg" class="img" alt="">Корзина
 						<span class="bottomAppBar__basketCount">5</span>
 					</button>
 				</div>
 			</section>
 		</header>
-		<section id="categories" class="categories container">
+		<section id="categories" class="active categories container">
 			<ul class="categories__firstList">
 				<li><img src="img/categories/line_icons1.svg" alt="">Оригинальные запчасти
 				</li>
@@ -92,10 +92,24 @@
 				</li>
 			</ul>
 			<div class="img">
-				<img src="img/Group.png" alt="">
+				<img src="img/header/Group.png" alt="">
 			</div>
 
 
+		</section>
+		<section id="hero" class="hero container">
+			<img src="img/hero/banner.png" alt="" class="hero__heroImg">
+			<div class="hero__tripleStrip">
+				<div class="activeStrip strip"></div>
+				<div class="strip"></div>
+				<div class="strip"></div>
+			</div>
+			<div class="hero__arrows">
+				<span class="arrow leftArrow"><img src="img/hero/leftArrow.svg" alt=""></span>
+				<span
+						class="arrow rightArrow"><img src="img/hero/rightArrow.svg"
+													  alt=""></span>
+			</div>
 		</section>
 
 		<script src="js/app.js"></script>

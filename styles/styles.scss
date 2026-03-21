@@ -15,6 +15,7 @@ body {
 .appBar {
     height: 140px;
     background-color: white;
+    box-shadow: 0 5px 20px 0 rgba(44, 41, 51, 0.1);
 }
 
 .topAppBar {
@@ -119,6 +120,7 @@ body {
         z-index: 7;
         @include d-flex();
         font-weight: 600;
+        font-size: 14px;
         box-sizing: border-box;
         color: white;
         width: 168px;
@@ -242,6 +244,74 @@ body {
     }
 
 }
+
+.hero {
+    margin-top: 30px;
+
+    &__heroImg {
+        border-radius: 25px;
+        width: 1260px;
+        height: 420px;
+    }
+
+    &__tripleStrip {
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        margin-top: -71px;
+        margin-left: 60px;
+
+        .strip {
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 4px;
+            width: 60px;
+            border-radius: 30px;
+        }
+
+        .activeStrip {
+            background-color: #fff;
+        }
+    }
+
+    &__arrows {
+        margin-top: -165px;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px 0 rgba(46, 16, 102, 0.25);
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .leftArrow {
+            margin-left: -20px;
+        }
+
+        .rightArrow {
+            margin-right: -20px;
+        }
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+
+}
+
+
+
 
 
 
