@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Outfit", sans-serif;
-    font-size: 16px;
+    font-family: "Stolzl", sans-serif;
+    font-size: 14px;
 }
 
 .container {
@@ -10,12 +10,17 @@
     margin: 0 auto;
 }
 
+.secondContainer {
+    background-color: #fff;
+
+}
+
 .line {
-    border-bottom: 1px solid #E3E3E8
+    border-bottom: 1px solid #e3e3e8;
 }
 
 .spaceBetweenLinks {
-    margin: 5px;
+    margin: 0 5px;
 }
 
 .btn {
@@ -28,4 +33,3 @@
 .categories.active {
     display: none;
 }
-

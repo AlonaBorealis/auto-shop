@@ -1,8 +1,10 @@
+@import url("fonts/Stolzl/stylesheet.css");
+@import url("fonts/TTCommons/stylesheet.css");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Outfit", sans-serif;
-  font-size: 16px;
+  font-family: "Stolzl", sans-serif;
+  font-size: 14px;
 }
 
 .container {
@@ -10,12 +12,16 @@
   margin: 0 auto;
 }
 
+.secondContainer {
+  background-color: #fff;
+}
+
 .line {
-  border-bottom: 1px solid #E3E3E8;
+  border-bottom: 1px solid #e3e3e8;
 }
 
 .spaceBetweenLinks {
-  margin: 5px;
+  margin: 0 5px;
 }
 
 .btn {
@@ -30,7 +36,7 @@
 }
 
 body {
-  background-color: #FAFAFD;
+  background-color: #fafafd;
 }
 
 .appBar {
@@ -54,6 +60,7 @@ body {
   width: 50%;
 }
 .topAppBar .leftContainer__textLogo {
+  font-family: "Outfit", sans-serif;
   text-transform: uppercase;
   font-style: italic;
   color: #5946d7;
@@ -70,12 +77,13 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  align-items: flex-end;
   width: 440px;
   margin: 0 10px;
   transition: all 500ms ease;
-  border: 1px solid #DEDEE2;
+  border: 1px solid #dedee2;
   border-radius: 6px;
-  background-color: #F4F5F6;
+  background-color: #f4f5f6;
 }
 .topAppBar .leftContainer__inputSearch .inputSearch__container {
   width: 100%;
@@ -86,10 +94,12 @@ body {
   border-radius: 6px;
   outline: none;
   padding: 12px;
-  background-color: #F4F5F6;
+  background-color: #f4f5f6;
 }
 .topAppBar .leftContainer__inputSearch .inputSearch__container input::placeholder {
+  font-size: 18px;
   color: #505255;
+  font-family: "TT Commons";
 }
 .topAppBar .leftContainer__inputSearch .inputSearch__imgContainer {
   float: right;
@@ -118,6 +128,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  align-items: flex-end;
   font-size: 16px;
   line-height: 20px;
   height: 24px;
@@ -125,7 +136,7 @@ body {
 }
 .topAppBar .rightContainer a {
   text-decoration: none;
-  color: #1B1D1F;
+  color: #1b1d1f;
 }
 
 .bottomAppBar {
@@ -136,12 +147,11 @@ body {
   height: 70px;
 }
 .bottomAppBar__allCategoriesBtn {
-  z-index: 7;
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  font-weight: 600;
   font-size: 14px;
   box-sizing: border-box;
   color: white;
@@ -164,9 +174,10 @@ body {
 }
 .bottomAppBar__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
+  width: 80%;
   padding: 0;
   list-style: none;
 }
@@ -176,28 +187,27 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   box-sizing: border-box;
   border-radius: 8px;
   height: 44px;
-  margin: 0 5px;
-  padding: 8px;
+  padding: 10px;
   transition: all 300ms ease;
 }
 .bottomAppBar__list li:hover {
   cursor: pointer;
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
 .bottomAppBar__basketBtn {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
   float: right;
   border: none;
   width: 167px;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.3s ease;
 }
 .bottomAppBar__basketBtn:hover {
@@ -209,7 +219,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: #FB6019;
+  background-color: #fb6019;
   padding: 5px;
   width: 15px;
   height: 15px;
@@ -219,10 +229,11 @@ body {
 }
 
 .categories {
+  z-index: 11;
   position: relative;
   box-sizing: border-box;
   background-color: #fff;
-  border: 1px solid #F6F8FB;
+  border: 1px solid #f6f8fb;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -248,6 +259,9 @@ body {
   width: 940px;
 }
 .categories__firstList li {
+  font-family: Stolzl;
+  font-size: 14px;
+  color: rgb(27, 29, 31);
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
@@ -265,24 +279,58 @@ body {
 }
 .categories__firstList li:hover {
   cursor: pointer;
-  color: #5946D7;
-  background-color: #F4F5F7;
+  color: #5946d7;
+  background-color: #f4f5f7;
 }
 
 .hero {
-  margin-top: 30px;
+  position: relative;
+  top: 30px;
 }
-.hero__heroImg {
+.hero__slider {
+  background: url("/img/hero/banner.png");
   border-radius: 25px;
-  width: 1260px;
   height: 420px;
 }
+.hero__slider__text {
+  position: absolute;
+  margin-top: 100px;
+  box-sizing: border-box;
+  width: 627px;
+  color: #fff;
+  font-family: Stolzl;
+  margin-left: 90px;
+}
+.hero__slider__text h1 {
+  line-height: 55px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero__slider__text h1 .highlightedText {
+  box-sizing: content-box;
+  display: inline-block;
+  text-align: center;
+  line-height: 55px;
+  width: 110px;
+  vertical-align: bottom;
+  font-weight: 700;
+  font-size: 40px;
+  background-color: #f65f29;
+  border-radius: 10px;
+}
+.hero__slider__text p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
 .hero__tripleStrip {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   width: 220px;
-  margin-top: -71px;
-  margin-left: 60px;
+  top: 80%;
+  margin-left: 90px;
 }
 .hero__tripleStrip .strip {
   background-color: rgba(255, 255, 255, 0.3);
@@ -294,12 +342,14 @@ body {
   background-color: #fff;
 }
 .hero__arrows {
-  margin-top: -165px;
   display: flex;
   align-self: center;
   justify-content: space-between;
 }
 .hero__arrows .arrow {
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,18 +359,119 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px 0 rgba(46, 16, 102, 0.25);
   transition: all 0.3s ease;
+  outline: none;
+  border: none;
 }
 .hero__arrows .arrow:hover {
   transform: scale(1.1);
 }
 .hero__arrows .leftArrow {
-  margin-left: -20px;
+  left: -20px;
 }
 .hero__arrows .rightArrow {
-  margin-right: -20px;
+  right: -20px;
 }
 .hero :hover {
   cursor: pointer;
+}
+
+.menu {
+  margin-top: 60px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.menu__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: space-around;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0 rgba(44, 41, 51, 0.1);
+}
+.menu__list .categoriesImg {
+  background: url("/img/categories/category.png");
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu__list li {
+  border: 1px solid rgb(232, 227, 227);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 420px;
+  height: 100px;
+  padding: 15px;
+  transition: all 300ms ease;
+  color: #1b1d1f;
+}
+.menu__list li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu__list li:hover {
+  cursor: pointer;
+  color: #5946d7;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.menu__list li img {
+  margin: 0 10px;
+}
+.menu__list li .listItemText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  justify-content: center;
+}
+.menu__list li h1 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu__list li p {
+  font-size: 12px;
+  color: rgba(80, 82, 85, 0.9);
+}
+.menu__list li.imaged button {
+  background: none;
+  border: none;
+}
+.menu__list li.imaged a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu__list li.imaged a button {
+  margin-top: 35px;
+}
+.menu__list li.imaged a button:hover {
+  cursor: pointer;
+}
+.menu__list li.imaged {
+  color: white;
+  background-position: -7px -7px;
+  background-size: 110%;
+  background-image: url("/img/categories/item_bg.png");
+}
+
+.productsOil {
+  background-color: #6a59cb;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

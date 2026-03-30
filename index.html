@@ -1,62 +1,67 @@
 <!doctype html>
 <html class="no-js" lang="">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<title></title>
-		<link rel="stylesheet" href="styles/styles.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-			  rel="stylesheet">
-		<link rel="stylesheet"
-			  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+		<link href="styles/styles.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link
+				href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+				rel="stylesheet"
+		/>
+		<link href="fonts/Stolzl/stylesheet.css" rel="stylesheet" type="text/css"/>
+		<link href="fonts/TTCommons/stylesheet.css" rel="stylesheet" type="text/css"/>
+		<link
+				href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+				rel="stylesheet"
+		/>
 	</head>
-
+	
 	<body>
-		<header id="appBar" class="appBar">
+		<header class="appBar" id="appBar">
 			<section class="topAppBar container">
 				<div class="leftContainer">
-					<img class="leftContainer__imgLogo" src="img/header/logo.png" alt="">
+					<img
+							alt=""
+							class="leftContainer__imgLogo"
+							src="img/header/logo.png"
+					/>
 					<h1 class="leftContainer__textLogo">oner.ru</h1>
 					<div class="leftContainer__inputSearch">
 						<div class="inputSearch__container">
-							<input type="text"
-								   placeholder="Введите номер запчасти или VIN">
+							<input placeholder="Введите номер запчасти или VIN" type="text"/>
 						</div>
-
+						
 						<div class="inputSearch__imgContainer">
-							<img src="img/header/search.svg" alt="">
+							<img alt="" src="img/header/search.svg"/>
 						</div>
-
 					</div>
-
 				</div>
 				<div class="rightContainer">
+		            <span class="rightContainer__personalInfo">
+		                <img alt="" src="img/header/location.svg"/>
+		                <a href="#">Санкт-Петербург</a>
+		            </span>
 					<span class="rightContainer__personalInfo">
-						<img src="img/header/location.svg" alt="">
-						<a href="#">Санкт-Петербург</a>
-					</span>
+		                <img alt="" src="img/header/phone.svg"/>
+		                <a href="tel:73472294645"><b>+7 (347) 229-46-45</b></a>
+		            </span>
 					<span class="rightContainer__personalInfo">
-						<img src="img/header/phone.svg" alt="">
-						<a href="tel:73472294645"><b>+7 (347) 229-46-45</b></a>
-					</span>
-					<span class="rightContainer__personalInfo">
-						<img src="img/header/user.svg" alt="">
-						<a href="#">Вход</a>
-						<span class="spaceBetweenLinks">/</span>
-						<a href="#">Регистрация</a>
-					</span>
+		                <img alt="" src="img/header/user.svg"/>
+		                <a href="#">Вход</a>
+		                <span class="spaceBetweenLinks">/</span>
+		                <a href="#">Регистрация</a>
+		          </span>
 				</div>
-
 			</section>
 			<div class="line"></div>
 			<section class="bottomAppBar container">
 				<div class="bottomAppBar__navigation">
-					<button id="categoriesBtn" class="bottomAppBar__allCategoriesBtn btn">
-						<img src="img/header/grid.svg" alt="">
+					<button class="bottomAppBar__allCategoriesBtn btn" id="categoriesBtn">
+						<img alt="" src="img/header/grid.svg"/>
 						<span>Все категории</span>
-
 					</button>
 					<ul class="bottomAppBar__list">
 						<li>Запчасти для ТО</li>
@@ -67,54 +72,186 @@
 						<li>Аккумуляторы</li>
 					</ul>
 					<button class="bottomAppBar__basketBtn btn">
-						<img src="img/header/basket.svg" class="img" alt="">Корзина
+						<img alt="" class="img" src="img/header/basket.svg"/>Корзина
 						<span class="bottomAppBar__basketCount">5</span>
 					</button>
 				</div>
 			</section>
 		</header>
-		<section id="categories" class="active categories container">
+		<section class="active categories container" id="categories">
 			<ul class="categories__firstList">
-				<li><img src="img/categories/line_icons1.svg" alt="">Оригинальные запчасти
+				<li>
+					<img alt="" src="img/categories/line_icons1.svg"/>Оригинальные
+					                                                  запчасти
 				</li>
-				<li><img src="img/categories/line_icons2.svg" alt="">Неоригинальные
-																	 запчасти
+				<li>
+					<img alt="" src="img/categories/line_icons2.svg"/>Неоригинальные
+					                                                  запчасти
 				</li>
-				<li><img src="img/categories/9.svg" alt="">Запчасти ВАЗ, ГАЗ, КАМАЗ</li>
-				<li><img src="img/categories/3.svg" alt="">Кузовные запчасти</li>
-				<li><img src="img/categories/Safety%20belt.svg" alt="">Запчасти для ТО</li>
-				<li><img src="img/categories/Glass%20washer.svg" alt="">Автостекла</li>
-				<li><img src="img/categories/gear-box-switch.svg" alt="">Автомасла</li>
-				<li><img src="img/categories/gear-box-switch.svg" alt="">Автохимия</li>
-				<li><img src="img/categories/11.svg" alt="">Диски</li>
-				<li><img src="img/categories/4.svg" alt="">Аккумуляторы</li>
-				<li><img src="img/categories/short-light-dashboard.svg" alt="">Автолампы
+				<li>
+					<img alt="" src="img/categories/9.svg"/>Запчасти ВАЗ, ГАЗ, КАМАЗ
+				</li>
+				<li><img alt="" src="img/categories/3.svg"/>Кузовные запчасти</li>
+				<li>
+					<img alt="" src="img/categories/Safety%20belt.svg"/>Запчасти для ТО
+				</li>
+				<li>
+					<img alt="" src="img/categories/Glass%20washer.svg"/>Автостекла
+				</li>
+				<li>
+					<img alt="" src="img/categories/gear-box-switch.svg"/>Автомасла
+				</li>
+				<li>
+					<img alt="" src="img/categories/gear-box-switch.svg"/>Автохимия
+				</li>
+				<li><img alt="" src="img/categories/11.svg"/>Диски</li>
+				<li><img alt="" src="img/categories/4.svg"/>Аккумуляторы</li>
+				<li>
+					<img alt="" src="img/categories/short-light-dashboard.svg"/>Автолампы
 				</li>
 			</ul>
 			<div class="img">
-				<img src="img/header/Group.png" alt="">
+				<img alt="" src="img/header/Group.png"/>
 			</div>
-
-
 		</section>
-		<section id="hero" class="hero container">
-			<img src="img/hero/banner.png" alt="" class="hero__heroImg">
+		
+		<section class="hero container" id="hero">
+			<div class="hero__slider">
+				<div class="hero__slider__text">
+					<h1>Оригинальные автомасла cо скидкой
+						<div class="highlightedText">15%</div>
+					</h1>
+					<p>Акция действует с 1 по 30 июня 2021</p>
+				</div>
+			</div>
 			<div class="hero__tripleStrip">
 				<div class="activeStrip strip"></div>
 				<div class="strip"></div>
 				<div class="strip"></div>
 			</div>
 			<div class="hero__arrows">
-				<span class="arrow leftArrow"><img src="img/hero/leftArrow.svg" alt=""></span>
-				<span
-						class="arrow rightArrow"><img src="img/hero/rightArrow.svg"
-													  alt=""></span>
+				<button class="arrow leftArrow">
+					<img alt="" src="img/hero/leftArrow.svg"/>
+				</button>
+				<button class="arrow rightArrow">
+					<img alt="" src="img/hero/rightArrow.svg"/>
+				</button>
+			</div>
+		
+		</section>
+		
+		<section class="menu container" id="menu">
+			<div>
+				<ul class="menu__list">
+					<li>
+						<img alt="" src="img/categories/line_icons1.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Оригинальные запчасти</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/line_icons2.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Неоригинальные запчасти</h1>
+							<p>278 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/9.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Запчасти ВАЗ, ГАЗ, КАМАЗ</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/3.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Кузовные запчасти</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/Safety%20belt.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Запчасти для ТО</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/Glass%20washer.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Автостекла</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/gear-box-switch.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Автомасла</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/gear-box-switch.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Автохимия</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/11.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Диски</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/4.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Аккумуляторы</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li>
+						<img alt="" src="img/categories/short-light-dashboard.svg"/>
+						<a class="listItemText" href="google.com" target="_blank">
+							<h1>Автолампы</h1>
+							<p>730 товаров</p>
+						</a>
+					</li>
+					<li class="imaged">
+						<img alt="" src="img/categories/chart.svg"/>
+						<a class="" href="google.com" target="_blank">
+							Поставщикам
+							<button>
+								<img alt="" src="img/categories/arrow.png"/>
+							</button>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</section>
-
+		
+		<section class="secondContainer">
+			<div class="productsOil container" id="productsOil">
+				<div class="productsOil__oilHeader">
+					<h1>Автомасла</h1>
+					<button>Все масла
+						<img src="/img/categories/arrow.png" alt="">
+					</button>
+				</div>
+				<div class="productsOil__cards">
+					<div class="card">1</div>
+					<div class="card">2</div>
+					<div class="card">3</div>
+					<div class="card">4</div>
+				</div>
+				
+			</div>
+		
+		</section>
+		
 		<script src="js/app.js"></script>
-
-
 	</body>
-
 </html>
