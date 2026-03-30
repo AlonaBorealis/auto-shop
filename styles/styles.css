@@ -472,7 +472,7 @@ body {
 
 .productsOil {
   padding-top: 30px;
-  height: 100vh;
+  height: 470px;
 }
 .productsOil__oilHeader {
   display: flex;
@@ -605,6 +605,7 @@ body {
   border-radius: 8px;
   width: 40px;
   height: 40px;
+  transition: all 300ms ease;
 }
 .productsOil__cards .secondCard .price button:hover {
   cursor: pointer;
@@ -615,7 +616,6 @@ body {
   width: 24px;
   height: 24px;
   margin: 0;
-  transition: all 300ms ease;
 }
 
 /*# sourceMappingURL=styles.css.map */
