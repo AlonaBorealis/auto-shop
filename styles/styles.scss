@@ -53,7 +53,7 @@ body {
         &__inputSearch {
             @include d-flex();
             align-items: flex-end;
-            width: 440px;
+            width: 80%;
             margin: 0 10px;
             transition: all 500ms ease;
             border: 1px solid #dedee2;
@@ -126,11 +126,65 @@ body {
             color: i.$text-color;
         }
     }
+
+    @media (max-width: 1189px) {
+        .leftContainer {
+            justify-content: flex-start;
+            width: 90%;
+        }
+
+        .rightContainer {
+            justify-content: flex-end;
+        }
+
+        .rightContainer__personalInfo {
+            a {
+                display: none;
+            }
+
+            .spaceBetweenLinks {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .leftContainer {
+            width: 99%;
+        }
+        .leftContainer__inputSearch {
+            width: 100%;
+        }
+
+        .leftContainer__imgLogo {
+            width: 30px;
+            height: 30px;
+        }
+        .leftContainer__textLogo {
+            font-size: 27px;
+        }
+
+        .rightContainer__personalInfo {
+            a {
+                display: none;
+            }
+
+            .spaceBetweenLinks {
+                display: none;
+            }
+        }
+    }
+
 }
 
 .bottomAppBar {
     @include d-flex();
     height: 70px;
+
+    &__navigation {
+        @include d-flex();
+        width: 100%;
+    }
 
     &__allCategoriesBtn {
         z-index: 12;
@@ -140,33 +194,49 @@ body {
         width: 180px;
         border: none;
         padding: 0 15px;
-    }
-
-    &__navigation {
-        @include d-flex();
-        width: 100%;
+        margin-right: 10px;
     }
 
     &__list {
-        @include d-flex(space-evenly);
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        justify-content: space-around;
         width: 80%;
         padding: 0;
         list-style: none;
 
         li {
             @include d-flex();
-            text-align: center;
             font-size: 14px;
             box-sizing: border-box;
             border-radius: 8px;
+            padding: 8px;
+            text-align: center;
             height: 44px;
-            padding: 10px;
             transition: all 300ms ease;
 
             &:hover {
                 cursor: pointer;
                 background-color: #f4f5f7;
                 box-shadow: 0 5px 10px 0 rgba(44, 41, 51, 0.1);
+            }
+
+            &:nth-child(n+5) { // Скрыть 5-6 при <1100px
+                @media (max-width: 1100px) {
+                    display: none;
+                }
+            }
+
+            &:nth-child(n+4) { // Скрыть 4-6 при <950px
+                @media (max-width: 950px) {
+                    display: none;
+                }
+            }
+
+            &:nth-child(n+2) { // Скрыть 2-6 при <650px
+                @media (max-width: 650px) {
+                    display: none;
+                }
             }
         }
     }
@@ -180,6 +250,7 @@ body {
         width: 167px;
         font-size: 14px;
         transition: all 0.3s ease;
+        margin-left: 10px;
 
         &:hover {
             cursor: pointer;
@@ -197,6 +268,20 @@ body {
             font-size: 14px;
         }
     }
+
+    @media (max-width: 768px) {
+        .bottomAppBar__list {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            overflow: hidden;
+            justify-content: space-around;
+
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+
 }
 
 .categories {
@@ -208,7 +293,6 @@ body {
     border-radius: 10px;
     padding: 20px;
     @include d-flex();
-    height: 280px;
     width: 100%;
     box-shadow: 12px 12px 0 10000px rgba(0, 0, 0, 0.62);
     transition: all 0.3s ease;
@@ -219,13 +303,11 @@ body {
 
     &__firstList {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
         align-content: space-around;
         list-style: none;
         background-color: #fff;
         border-radius: 10px;
-        height: 240px;
-        width: 940px;
 
         li {
 
@@ -235,8 +317,6 @@ body {
             box-sizing: border-box;
             @include d-flex(flex-start, center);
             text-align: center;
-            width: 300px;
-            height: 60px;
             padding: 15px;
             border-radius: 10px;
             transition: all 300ms ease;
@@ -252,6 +332,19 @@ body {
             }
         }
     }
+
+    @media (max-width: 768px) {
+        .categories__firstList {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+
+    }
+    @media (max-width: 1070px) {
+        .pictureInCategories {
+            display: none;
+        }
+    }
 }
 
 .hero {
@@ -259,17 +352,18 @@ body {
     top: 30px;
 
     &__slider {
-        background: url("/img/hero/banner.png");
+        background: url("/img/hero/banner.png") no-repeat;
+        background-size: contain;
         border-radius: 25px;
         height: 420px;
+        width: 100%;
 
         &__text {
             position: absolute;
             margin-top: 100px;
             box-sizing: border-box;
-            width: 627px;
             color: #fff;
-            font-family: Stolzl;
+            font-family: Stolzl sans-serif;
             margin-left: 90px;
 
             h1 {
@@ -327,17 +421,20 @@ body {
         display: flex;
         align-self: center;
         justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 0 10px;
+        top: calc(50% - 10px);
 
         .arrow {
-            position: absolute;
-            top: calc(50% - 20px);;
             z-index: 5;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
+            width: 30px;
             height: 40px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.7);
             border-radius: 10px;
             box-shadow: 0 4px 10px 0 rgba(46, 16, 102, 0.25);
             transition: all 0.3s ease;
@@ -346,38 +443,37 @@ body {
 
             &:hover {
                 transform: scale(1.1);
+                cursor: pointer;
             }
         }
 
-        .leftArrow {
-            left: -20px;
-        }
-
-        .rightArrow {
-            right: -20px;
-        }
     }
 
     &:hover {
         cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+
+    }
+
 }
 
 .menu {
     margin-top: 60px;
     box-sizing: border-box;
-    background-color: #fff;
     @include d-flex();
-    width: 100%;
     transition: all 0.3s ease;
 
     &__list {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-content: space-around;
         list-style: none;
         background-color: #fff;
         box-shadow: 5px 5px 20px 0 rgba(44, 41, 51, 0.1);
+        border-radius: 15px;
 
         .categoriesImg {
             background: url("/img/categories/category.png");
@@ -386,12 +482,12 @@ body {
             height: 100%;
         }
 
+
         li {
-            border: 1px solid rgba(232, 227, 227, 1);
+            border: 1px solid rgba(242, 244, 245, 0.5);
             box-sizing: border-box;
             @include d-flex(flex-start, center);
             text-align: center;
-            width: 420px;
             height: 100px;
             padding: 15px;
             transition: all 300ms ease;
@@ -465,11 +561,17 @@ body {
             background-image: url("/img/categories/item_bg.png");
         }
     }
+
+    @media (max-width: 768px) {
+        .menu__list {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+    }
 }
 
 .productsOil {
     padding-top: 60px;
-    height: 470px;
     position: relative;
 
     &:last-child {
@@ -542,6 +644,7 @@ body {
                 cursor: pointer;
             }
         }
+
     }
 
     &__cards {
@@ -552,14 +655,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 300px;
-            height: 410px;
             border: 1px solid #DEDEE2;
             border-radius: 10px;
             transition: all 300ms ease;
 
             &:hover {
-                border: 1px solid #fff;
+                border: 1px solid #F4F5F7;
                 box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
                 cursor: pointer;
             }
@@ -660,6 +761,7 @@ body {
                     width: 40px;
                     height: 40px;
                     transition: all 300ms ease;
+                    background-size: cover;
 
                     &:hover {
                         cursor: pointer;
@@ -669,16 +771,32 @@ body {
                 }
 
                 img {
-                    width: 24px;
-                    height: 24px;
+                    width: 28px;
+                    height: 28px;
                     margin: 0;
+
+
+                    &:hover {
+                        -webkit-filter: grayscale(100) brightness(200);
+                        filter: grayscale(100) brightness(200);
+                    }
 
                 }
 
 
             }
         }
+
+        overflow-y: scroll;
     }
+
+    @media (max-width: 1240px) {
+        .productsOil__oilHeader {
+            padding: 20px;
+            margin: 0;
+        }
+    }
+
 }
 
 .banners {
@@ -686,7 +804,7 @@ body {
     margin-top: 60px;
 
     &__banner {
-        width: 407px;
+        width: 30%;
         height: 250px;
         background-color: #e7edf9;
         @include d-flex();
@@ -697,7 +815,6 @@ body {
             margin: 30px;
 
             p {
-                width: 232px;
                 font-size: 24px;
                 font-weight: 500;
                 color: #1B1D1F;
@@ -854,7 +971,6 @@ body {
     }
 }
 
-
 .bottomFooter {
     justify-content: space-between;
     display: flex;
@@ -885,12 +1001,12 @@ body {
                 border: none;
                 outline: none;
                 margin: 5px;
-                transition: all 300ms ease;
+                transition: all 400ms ease;
 
                 &:hover {
                     cursor: pointer;
                     outline: none;
-                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
                 }
             }
         }
@@ -904,6 +1020,10 @@ body {
                 color: #F4F5F7;
                 font-size: 14px;
                 font-weight: 300;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
@@ -912,4 +1032,24 @@ body {
 
 .secondLine {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero__arrows {
+        display: none;
+    }
+
+    .productsOil__arrows {
+        display: none;
+    }
 }
