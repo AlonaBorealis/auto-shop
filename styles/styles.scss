@@ -1,6 +1,4 @@
 @use "importer" as i;
-@import url("fonts/Stolzl/stylesheet.css");
-@import url("fonts/TTCommons/stylesheet.css");
 
 @mixin d-flex($justify: space-between, $align: center, $wrap: nowrap) {
     display: flex;
@@ -352,37 +350,33 @@ body {
     top: 30px;
 
     &__slider {
-        background: url("/img/hero/banner.png") no-repeat;
-        background-size: contain;
+        position: relative;
+        background: url("../img/hero/banner.png") no-repeat right center;
+        background-size: cover;
         border-radius: 25px;
         height: 420px;
         width: 100%;
 
         &__text {
+            width: 50%;
+            top: 20%;
             position: absolute;
-            margin-top: 100px;
             box-sizing: border-box;
             color: #fff;
-            font-family: Stolzl sans-serif;
+            font-family: Stolzl, sans-serif;
             margin-left: 90px;
 
             h1 {
-                line-height: 55px;
-                font-size: 40px;
+                font-size: clamp(1.2rem, 3vw, 3rem);
                 font-weight: 700;
 
 
                 .highlightedText {
-                    box-sizing: content-box;
                     display: inline-block;
-                    text-align: center;
-                    line-height: 55px;
-                    width: 110px;
-                    vertical-align: bottom;
-                    font-weight: 700;
-                    font-size: 40px;
+                    padding: 0 15px;
                     background-color: #f65f29;
                     border-radius: 10px;
+                    font-size: 90%;
                 }
             }
 
@@ -393,7 +387,6 @@ body {
                 color: rgba(255, 255, 255, 0.8);
             }
         }
-
 
     }
 
@@ -453,6 +446,18 @@ body {
         cursor: pointer;
     }
 
+    @media (max-width: 1189px) {
+        .hero__slider__text {
+            h1 {
+            }
+        }
+        .highlightedText {
+        }
+        .hero__tripleStrip {
+            display: none;
+        }
+    }
+
     @media (max-width: 768px) {
 
     }
@@ -476,7 +481,7 @@ body {
         border-radius: 15px;
 
         .categoriesImg {
-            background: url("/img/categories/category.png");
+            background: url("../img/categories/category.png");
             display: block;
             width: 100%;
             height: 100%;
@@ -558,7 +563,7 @@ body {
             color: white;
             background-position: -7px -7px;
             background-size: 110%;
-            background-image: url("/img/categories/item_bg.png");
+            background-image: url("../img/categories/item_bg.png");
         }
     }
 
@@ -969,7 +974,22 @@ body {
 
         }
     }
+
+    @media (max-width: 1189px) {
+        grid-template-columns: 25% 25% 25% 25%;
+        .consult {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+        .upperFooter__status {
+            margin-left: 20px;
+
+        }
+
+    }
 }
+
 
 .bottomFooter {
     justify-content: space-between;

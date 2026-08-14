@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Light Italic'), local('TTCommons-LightItalic'),
+        url('TTCommons-LightItalic.woff2') format('woff2'),
+        url('TTCommons-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Black'), local('TTCommons-Black'),
+        url('TTCommons-Black.woff2') format('woff2'),
+        url('TTCommons-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Bold'), local('TTCommons-Bold'),
+        url('TTCommons-Bold.woff2') format('woff2'),
+        url('TTCommons-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons DemiBold Italic'), local('TTCommons-DemiBoldItalic'),
+        url('TTCommons-DemiBoldItalic.woff2') format('woff2'),
+        url('TTCommons-DemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Bold Italic'), local('TTCommons-BoldItalic'),
+        url('TTCommons-BoldItalic.woff2') format('woff2'),
+        url('TTCommons-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Regular'), local('TTCommons-Regular'),
+        url('TTCommons-Regular.woff2') format('woff2'),
+        url('TTCommons-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons ExtraBold'), local('TTCommons-ExtraBold'),
+        url('TTCommons-ExtraBold.woff2') format('woff2'),
+        url('TTCommons-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Italic'), local('TTCommons-Italic'),
+        url('TTCommons-Italic.woff2') format('woff2'),
+        url('TTCommons-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons ExtraLight'), local('TTCommons-ExtraLight'),
+        url('TTCommons-ExtraLight.woff2') format('woff2'),
+        url('TTCommons-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Medium Italic'), local('TTCommons-MediumItalic'),
+        url('TTCommons-MediumItalic.woff2') format('woff2'),
+        url('TTCommons-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Thin'), local('TTCommons-Thin'),
+        url('TTCommons-Thin.woff2') format('woff2'),
+        url('TTCommons-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons ExtraLight Italic'), local('TTCommons-ExtraLightItalic'),
+        url('TTCommons-ExtraLightItalic.woff2') format('woff2'),
+        url('TTCommons-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons ExtraBold Italic'), local('TTCommons-ExtraBoldItalic'),
+        url('TTCommons-ExtraBoldItalic.woff2') format('woff2'),
+        url('TTCommons-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Medium'), local('TTCommons-Medium'),
+        url('TTCommons-Medium.woff2') format('woff2'),
+        url('TTCommons-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Black Italic'), local('TTCommons-BlackItalic'),
+        url('TTCommons-BlackItalic.woff2') format('woff2'),
+        url('TTCommons-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Light'), local('TTCommons-Light'),
+        url('TTCommons-Light.woff2') format('woff2'),
+        url('TTCommons-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons DemiBold'), local('TTCommons-DemiBold'),
+        url('TTCommons-DemiBold.woff2') format('woff2'),
+        url('TTCommons-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons Thin Italic'), local('TTCommons-ThinItalic'),
+        url('TTCommons-ThinItalic.woff2') format('woff2'),
+        url('TTCommons-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+

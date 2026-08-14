@@ -1,5 +1,3 @@
-@import url("fonts/Stolzl/stylesheet.css");
-@import url("fonts/TTCommons/stylesheet.css");
 * {
   margin: 0;
   padding: 0;
@@ -375,36 +373,32 @@ body {
   top: 30px;
 }
 .hero__slider {
-  background: url("/img/hero/banner.png") no-repeat;
-  background-size: contain;
+  position: relative;
+  background: url("../img/hero/banner.png") no-repeat right center;
+  background-size: cover;
   border-radius: 25px;
   height: 420px;
   width: 100%;
 }
 .hero__slider__text {
+  width: 50%;
+  top: 20%;
   position: absolute;
-  margin-top: 100px;
   box-sizing: border-box;
   color: #fff;
-  font-family: Stolzl sans-serif;
+  font-family: Stolzl, sans-serif;
   margin-left: 90px;
 }
 .hero__slider__text h1 {
-  line-height: 55px;
-  font-size: 40px;
+  font-size: clamp(1.2rem, 3vw, 3rem);
   font-weight: 700;
 }
 .hero__slider__text h1 .highlightedText {
-  box-sizing: content-box;
   display: inline-block;
-  text-align: center;
-  line-height: 55px;
-  width: 110px;
-  vertical-align: bottom;
-  font-weight: 700;
-  font-size: 40px;
+  padding: 0 15px;
   background-color: #f65f29;
   border-radius: 10px;
+  font-size: 90%;
 }
 .hero__slider__text p {
   font-weight: 400;
@@ -460,6 +454,11 @@ body {
 .hero:hover {
   cursor: pointer;
 }
+@media (max-width: 1189px) {
+  .hero .hero__tripleStrip {
+    display: none;
+  }
+}
 .menu {
   margin-top: 60px;
   box-sizing: border-box;
@@ -480,7 +479,7 @@ body {
   border-radius: 15px;
 }
 .menu__list .categoriesImg {
-  background: url("/img/categories/category.png");
+  background: url("../img/categories/category.png");
   display: block;
   width: 100%;
   height: 100%;
@@ -550,7 +549,7 @@ body {
   color: white;
   background-position: -7px -7px;
   background-size: 110%;
-  background-image: url("/img/categories/item_bg.png");
+  background-image: url("../img/categories/item_bg.png");
 }
 @media (max-width: 768px) {
   .menu .menu__list {
@@ -901,6 +900,19 @@ body {
   }
   100% {
     box-shadow: 0 0 0 15px rgba(73, 193, 113, 0);
+  }
+}
+@media (max-width: 1189px) {
+  .upperFooter {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .upperFooter .consult {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+  .upperFooter .upperFooter__status {
+    margin-left: 20px;
   }
 }
 
